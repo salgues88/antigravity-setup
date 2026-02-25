@@ -18,6 +18,7 @@ export async function login(formData: FormData) {
     })
 
     if (error) {
+        console.error('Login error:', error.message)
         redirect('/login?message=Could not authenticate user')
     }
 
@@ -37,7 +38,21 @@ export async function signup(formData: FormData) {
     })
 
     if (error) {
+        console.error('Signup error:', error.message)
         redirect('/login?message=Could not authenticate user')
+    }
+
+    revalidatePath('/', 'layout')
+    redirect('/')
+}
+
+export async function logout() {
+    const supabase = await createClient()
+
+    const { error } = await supabase.auth.signOut()
+
+    if (error) {
+        redirect('/error?message=Could not sign out')
     }
 
     revalidatePath('/', 'layout')
