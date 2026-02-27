@@ -4,6 +4,9 @@ import { createClient } from "@/lib/supabase/server";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ShareButton from "@/components/ShareButton";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
 // Next.js 15+ async params requirement
 type PageProps = {
@@ -108,11 +111,12 @@ export default async function PostPage({ params }: PageProps) {
                 {/* Article Content */}
                 <article className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
                     <div className="prose prose-lg prose-blue mx-auto mt-8 text-gray-800">
-                        {/* If content is basic text, we use whitespace-pre-wrap to respect newlines. 
-                If it was Markdown/HTML, we would use a different renderer. */}
-                        <div className="whitespace-pre-wrap leading-relaxed">
+                        <ReactMarkdown
+                            remarkPlugins={[remarkGfm]}
+                            rehypePlugins={[rehypeRaw]}
+                        >
                             {post.content}
-                        </div>
+                        </ReactMarkdown>
                     </div>
                 </article>
             </main>

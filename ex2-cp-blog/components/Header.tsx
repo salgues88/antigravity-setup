@@ -14,6 +14,7 @@ export default function Header({ user }: { user: User | null }) {
                 <div className="flex items-center gap-4">
                     {user ? (
                         <div className="flex items-center gap-4">
+                            <Link href="/write" className="text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors">새 글 작성</Link>
                             <span className="text-sm text-gray-600">{user.email}</span>
                             <form action={logout}>
                                 <button
