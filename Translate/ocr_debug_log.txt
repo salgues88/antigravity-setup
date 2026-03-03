@@ -1,0 +1,12 @@
+--- 디버깅 테스트 시작: test_images/Gallery_Fake_33_003.jpg ---
+결과: 총 10개의 텍스트 박스 감지됨.
+[1] Text: はの, Conf: 0.99, Box: [[np.int32(523), np.int32(85)], [np.int32(553), np.int32(85)], [np.int32(553), np.int32(99)], [np.int32(523), np.int32(99)]]
+[2] Text: 藤田玲司(フシタレイン), Conf: 0.99, Box: [[np.int32(84), np.int32(96)], [np.int32(236), np.int32(96)], [np.int32(236), np.int32(120)], [np.int32(84), np.int32(120)]]
+[3] Text: 三田村小夜子, Conf: 0.99, Box: [[np.int32(344), np.int32(172)], [np.int32(444), np.int32(172)], [np.int32(444), np.int32(196)], [np.int32(344), np.int32(196)]]
+[4] Text: 「ギャラリーフェイク」とはゆ?, Conf: 0.99, Box: [[np.int32(808), np.int32(360)], [np.int32(1076), np.int32(360)], [np.int32(1076), np.int32(386)], [np.int32(808), np.int32(386)]]
+[5] Text: 7, Conf: 0.99, Box: [[np.int32(955), np.int32(399)], [np.int32(971), np.int32(399)], [np.int32(971), np.int32(427)], [np.int32(955), np.int32(427)]]
+[6] Text: 3, Conf: 0.99, Box: [[np.int32(993), np.int32(399)], [np.int32(1005), np.int32(399)], [np.int32(1005), np.int32(431)], [np.int32(993), np.int32(431)]]
+[7] Text: |, Conf: 0.99, Box: [[np.int32(779), np.int32(399)], [np.int32(797), np.int32(399)], [np.int32(797), np.int32(531)], [np.int32(779), np.int32(531)]]
+[8] Text: 川, Conf: 0.99, Box: [[np.int32(983), np.int32(401)], [np.int32(1047), np.int32(401)], [np.int32(1047), np.int32(523)], [np.int32(983), np.int32(523)]]
+[9] Text: 川, Conf: 0.99, Box: [[np.int32(736), np.int32(464)], [np.int32(838), np.int32(464)], [np.int32(838), np.int32(676)], [np.int32(736), np.int32(676)]]
+[10] Text: ", Conf: 0.99, Box: [[np.int32(921), np.int32(651)], [np.int32(935), np.int32(651)], [np.int32(935), np.int32(673)], [np.int32(921), np.int32(673)]]
